@@ -1,0 +1,25 @@
+#graduate {
+  .grad-heading-container {
+    padding: 2rem 0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+
+    h2 {
+      margin-bottom: 3rem;
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    & .grad-heading {
+      font-size: 1.5rem;
+    }
+
+    & .grad-lists {
+      h3 {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
