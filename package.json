@@ -1,11 +1,11 @@
 {
-    "title": "Creative",
-    "name": "startbootstrap-creative",
-    "version": "5.1.5",
+    "title": "Fcos",
+    "name": "fcos-pages",
+    "version": "1.0.1",
     "scripts": {
         "start": "gulp watch"
     },
-    "description": "Creative is a stylish one page HTML theme for Bootstrap.",
+    "description": "Fcos pages website",
     "keywords": [
         "css",
         "sass",
@@ -14,19 +14,19 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/creative",
+    "homepage": "https://fcos.ie",
     "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-creative/issues",
-        "email": "feedback@startbootstrap.com"
+        "url": "https://github.com/balcoder/fcos-v2",
+        "email": ""
     },
     "license": "MIT",
-    "author": "Start Bootstrap",
+    "author": "dbwebworks.ie",
     "contributors": [
-        "David Miller (http://davidmiller.io/)"
+        "Des Barrett (http://dbwebworks.ie/)"
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-creative.git"
+        "url": "https://github.com/balcoder/fcos-v2.git"
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.8.2",

@@ -1,6 +1,8 @@
 (function($) {
   "use strict"; // Start of use strict
 
+
+
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -53,6 +55,47 @@
     image: {
       tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
     }
+  });
+
+    // GDPR compliance
+    $('body').bsgdprcookies({
+
+    // unique ID
+    id: 'bs-gdpr-cookies-modal',
+
+    // extra class
+    class: '',
+
+    // modal title
+    title: 'Cookies & Privacy Policy',
+
+    // backdrop of the modal
+    backdrop: 'static',
+
+    // Cookie Consent message
+    message: 'This site uses cookies to personalise content, provide social media features and to analyse traffic. ',
+
+    // shows scrollbar
+    //message:<a href="https://www.jqueryscript.net/tags.php?/Scroll/">Scroll</a>Bar: false,
+
+    // max height
+    messageMaxHeightPercent: 25,
+
+    // auto displays the modal after 1.5 seconds
+    delay: 1500,
+
+    // 30 days
+    expireDays: 30,
+
+    // options for read more link
+    moreLinkActive: true,
+    moreLinkLabel: 'Read more here..',
+    moreLinkNewTab: true,
+    moreLink: 'cookie-policy.html',
+
+    // text for accept button
+    acceptButtonLabel: 'Accept'
+
   });
 
 })(jQuery); // End of use strict

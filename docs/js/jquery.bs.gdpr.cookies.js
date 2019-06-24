@@ -100,7 +100,11 @@
                         var cookieDisabledText = '';
                         if(field.isFixed == true) {
                             cookieDisabledText = ' checked="checked" disabled="disabled"';
+<<<<<<< HEAD
                         }
+=======
+                        }       
+>>>>>>> test-gdpr
 
                         var cookieDescription = '';
                         if (field.description !== false) {
@@ -120,7 +124,11 @@
 
                 modalBody ='<div id="' + settings.id + '-message">' + settings.message + moreLink + '</div>';
             }
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> test-gdpr
             if(settings.messageScrollBar == true) {
                 modalBodyStyle = 'style="overflow-y: scroll; max-height: ' + settings.messageMaxHeightPercent + '%"';
             }
@@ -172,7 +180,11 @@
             $('body').on('click', '#' + settings.id + '-advanced-btn', function(){
                 // Uncheck all checkboxes except for the disabled ones
                 $('input[name="bsgdpr[]"]:not(:disabled)').attr('data-auto', 'off').prop('checked', false);
+<<<<<<< HEAD
 
+=======
+                
+>>>>>>> test-gdpr
                 $('label[name="bsgdpr[]"]').tooltip({offset: '0, 10'});
 
                 // Show advanced checkboxes
@@ -212,7 +224,11 @@
 
     /**
      * Check if user preference exists in cookie
+<<<<<<< HEAD
      *
+=======
+     * 
+>>>>>>> test-gdpr
      * @param {string} pref Preference to check
      */
     $.fn.bsgdprcookies.PreferenceExists = function(pref) {
@@ -231,7 +247,11 @@
 
     /**
      * Hide then delete bs modal
+<<<<<<< HEAD
      *
+=======
+     * 
+>>>>>>> test-gdpr
      * @param {string} id Modal ID without '#'
      */
     function DisposeModal(id) {
@@ -245,7 +265,11 @@
 
     /**
      * Sets Cookie
+<<<<<<< HEAD
      *
+=======
+     * 
+>>>>>>> test-gdpr
      * @param {string} name Name of the cookie which you want to create
      * @param {boolean} value Value for the created cookie
      * @param {number} days Expire days
@@ -259,11 +283,19 @@
         else var expires = "";
         document.cookie = name + "=" + value + expires + "; path=/";
     }
+<<<<<<< HEAD
 
 
     /**
      * Gets Cookie called 'name'
      *
+=======
+    
+
+    /**
+     * Gets Cookie called 'name'
+     * 
+>>>>>>> test-gdpr
      * @param {string} name Name of the cookie to read
      */
     function ReadCookie(name) {
@@ -276,14 +308,27 @@
         }
         return null;
     }
+<<<<<<< HEAD
 
     /**
      * Deletes Cookie called 'name;
      *
+=======
+    
+    /**
+     * Deletes Cookie called 'name;
+     * 
+>>>>>>> test-gdpr
      * @param {string} name Name of the cookie which you want to delete
      */
     function DeleteCookie(name) {
         CreateCookie(name, "", -1);
+<<<<<<< HEAD
     }
 
 }(jQuery));
+=======
+    }    
+
+}(jQuery));
+>>>>>>> test-gdpr
