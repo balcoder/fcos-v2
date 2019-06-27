@@ -11011,7 +11011,7 @@ header.masthead h2 {
   padding: 2rem 4rem;
 }
 
-.privacy h2 {
+.privacy h1, .privacy h2 {
   text-align: center;
   margin-top: 3rem;
 }
